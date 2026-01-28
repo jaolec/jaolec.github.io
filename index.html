@@ -3,13 +3,16 @@
 
     <head>
         <title>Pizza Ordering Form</title>
+        <style>
+            table, th, td { border:1px solid black;}
+        </style>
     </head>
     <body>
         <h1>Pizza Ordering Form</h1> <!--h1 = main title -->
         <h2> Contact Information</h2> <!--h2 = section title, h3 = subsection title -->
         <form>
             <label for ="name">Name: </label>
-            <input type="name" id="name" name="name" required><br>
+            <input type="text" id="name" name="name" required><br>
             <label for ="phone">Phone: </label>
             <input type="tel" id="phone" name="phone" required><br>
             <label for ="email">Email: </label>
@@ -18,7 +21,7 @@
         <h2> Select Pizza Size</h2>
         <label for ="size">Pizza Size: </label>
         <select name="size" id="size" required>
-            <label for ="size">Pizza Size: </label>
+            
             <option value="">-- Choose a Size --</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -31,28 +34,28 @@
             <label for="Marinara">Marinara</label><br>
             <input type="radio" id="Ranch" name="sauce" value="Ranch">
             <label for="Ranch">Ranch</label><br>
-            <input type="radio" id="No Sauce" name="sauce" value="No Sauce">
-            <label for="No Sauce">No Sauce</label><br>
+            <input type="radio" id="NoSauce" name="sauce" value="No Sauce">
+            <label for="NoSauce">No Sauce</label><br>
         
         <h2> Select Toppings</h2>
 
             <input type="checkbox" id="pepperoni" name="topping" value ="Pepperoni">
-            <label for="Pepperoni">Pepperoni</label>
+            <label for="pepperoni">Pepperoni</label>
             
             <input type="checkbox" id="sausage" name="topping" value ="Sausage">
-            <label for="Sausage">Sausage</label><br>
+            <label for="sausage">Sausage</label><br>
             
             <input type="checkbox" id="mushroom" name="topping" value ="Mushroom">
-            <label for="Mushroom">Mushroom</label>
+            <label for="mushroom">Mushroom</label>
 
             <input type="checkbox" id="pineapple" name="topping" value ="Pineapple">
-            <label for="Pineapple">Pineapple</label><br>
+            <label for="pineapple">Pineapple</label><br>
 
             <input type="checkbox" id="peppers" name="topping" value ="Peppers">
-            <label for="Peppers">Peppers</label>
+            <label for="peppers">Peppers</label>
 
             <input type="checkbox" id="onions" name="topping" value ="Onions">
-            <label for="Onions">Onions</label><br>
+            <label for="onions">Onions</label><br>
         
         <h2> Additional Instructions</h2>
         <textarea id="instructions" name="instructions" rows="4" cols="50" placeholder="Add instructions..."></textarea>
@@ -60,9 +63,7 @@
         <br><br>
         <input type="submit" value="Submit Order">
         </form>
-        <style>
-            table, th, td { border:1px solid black;}
-        </style>
+
         <p>List of My Favorite Games</p>
         <table style="width:100%">
             <tr>
