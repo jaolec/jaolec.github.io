@@ -1,0 +1,55 @@
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+#jumpMenu {
+    width: 15%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+h1{
+    padding-left: 20px;
+}
+
+main {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: green;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#thanks {
+    background-color:khaki;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    padding: 10px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+article {
+    width: 300px;
+    flex-shrink: 0;
+    scroll-margin-top: 120px;
+}
