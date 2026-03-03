@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pokemon Team Builder</title>
+        <script src="pokemonAPI.js"></script>
+        <link rel="stylesheet" href="pokemonAPI.css">
+        <style>
+            table, th, td { border:1px solid black;}
+        </style>
+    </head>
+
+    <body>
+        <h1>Pokemon Team Builder</h1>
+
+        <section id = "pokemon-search">
+            <!-- Ask for name or id of pokemon -->
+            <label for="pokemon-input">Enter Pokemon name or ID: </label>
+            <!-- Input Field with/ Submit Button , form section?-->
+            <input type="text" id="pokemon-input" placeholder="Enter Pokemon name or ID">
+
+            <!-- OnClick event for the search button -->
+             <button id="pokemon-submit" onclick="fetchPokemonData()">Search</button>
+
+        </section>
+
+        <section id= "pokemon-display">
+            <!-- Display Image -->
+             <figure>
+                <img id="pokemon-image" src="" alt="Pokemon Image">
+            </figure>
+
+            <!-- Display Sound and option to Play Sound-->
+            <button id="play-sound" onclick="playPokemonSound()">Play Sound</button>
+
+            <!-- Display current (time of sound / total time of sound) of sound next to play button (Not Required) -->
+            <!-- Display bar that is light grey and fills up through the duration of the audio (Not Required)-->
+            <!-- Display Speaker Icon to control volume (Not Required)-->
+
+        </section>
+
+        <section id = "moves-menu">
+            <!-- Display 4 move dropdown menus here -->
+            
+            <select name="move-1" id="move-1" required>
+            <option value="">-- Choose a Move --</option>
+            </select>
+            <select name="move-2" id="move-2" required>
+            <option value="">-- Choose a Move --</option>
+            </select>
+            <select name="move-3" id="move-3" required>
+            <option value="">-- Choose a Move --</option>
+            </select>
+            <select name="move-4" id="move-4" required>
+            <option value="">-- Choose a Move --</option>
+            </select>
+
+        </section>
+
+        <section id = "team">
+            <!-- Display Add to team button -->
+             <button id="add-to-team" onclick="addToTeam()">Add to Team</button>
+
+             <table id="team-table">
+                <tbody id="team-body">
+                    <!---->
+                </tbody>
+             </table>
+            <button id="reset-team" onclick = "resetLocalStorage()">Reset Local Storage</button>
+        </section>
+    </body>
+
+</html>

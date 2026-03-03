@@ -1,0 +1,55 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+#pokemon-search label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#pokemon-image {
+    width: 200px;
+    height: auto;
+}
+
+#pokemon-display {
+    padding-bottom: 10px;
+}
+
+#moves-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+#team-table {
+    display: none;
+    width: 80%;
+    margin: auto auto;
+}
+
+#team-table td {
+    width: 50%;
+}
+
+#team-table td:first-child {
+    text-align: center;
+}
+
+#team-table td:last-child {
+    text-align: left;
+}
+
+#team add-to-team {
+    padding-bottom: 10px;
+}
